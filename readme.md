@@ -152,24 +152,40 @@ El sistema ha demostrado resiliencia al adaptarse a un modelo de IA limitado med
 
 ## 12. ANEXOS Y EVIDENCIAS
 
-Las evidencias digitales presentadas a continuación certifican la veracidad de los hallazgos. Los archivos originales se encuentran en la carpeta `/evidencias/` del repositorio.
+Las siguientes evidencias digitales se encuentran almacenadas en la carpeta `evidencias` de este repositorio, certificando la veracidad de los hallazgos.
 
 ### A. Configuración de Infraestructura y Código
-Se evidencia la adaptación del código para soportar el modelo ligero y la corrección de la configuración de Docker.
-* **[Anexo 1] Configuración del Modelo:** `modelo.png` (Muestra la integración de smollm:360m en `main.py`).
-* **[Anexo 2] Ajuste de Volúmenes Docker:** `docket_compose.png` (Muestra la corrección del volumen de BD).
-* **[Anexo 3] Estructura del Proyecto:** `eliminar_db.png` (Vista del explorador de soluciones).
+Se evidencia la adaptación del código para soportar el modelo ligero y la corrección de la infraestructura en Docker.
+
+**[Anexo 1] Configuración del Modelo:** Muestra la integración de `smollm:360m` en `main.py`.  
+![Configuración del Modelo](evidencias/modelo.png)
+
+**[Anexo 2] Ajuste de Volúmenes Docker:** Muestra la corrección del volumen de BD en el manifiesto.  
+![Docker Compose Ajustado](evidencias/docket_compose.png)
+
+**[Anexo 3] Estructura del Proyecto:** Vista del explorador de soluciones confirmando la limpieza de archivos.  
+![Estructura Proyecto](evidencias/eliminar_db.png)
 
 ### B. Corrección Lógica (Backend)
 Debido a las limitaciones del modelo, se auditó e implementó una corrección algorítmica.
-* **[Anexo 4] Código Corregido:** `correcion_codigo.png` (Función de detección de intenciones robusta).
+
+**[Anexo 4] Código Corregido:** Función de detección de intenciones robusta (Parche de Software).  
+![Código Corregido](evidencias/correcion_codigo.png)
 
 ### C. Ejecución y Despliegue
 Evidencia del entorno en tiempo de ejecución ("Runtime").
-* **[Anexo 5] Logs de Despliegue Exitoso:** `docker_compose_ejecutado.png` (Ingesta de documentos y arranque de servicios).
-* **[Anexo 6] Servicio Ollama Activo:** `evidencia_smollm.png` (Logs del motor de inferencia sirviendo el modelo).
+
+**[Anexo 5] Logs de Despliegue Exitoso:** Ingesta de documentos y arranque de servicios sin errores.  
+![Logs Docker](evidencias/docker_compose_ejecutado.png)
+
+**[Anexo 6] Servicio Ollama Activo:** Logs del motor de inferencia sirviendo el modelo `smollm:360m`.  
+![Ollama Activo](evidencias/evidencia_smollm.png)
 
 ### D. Pruebas Funcionales y Verificación Forense
 Prueba de extremo a extremo (End-to-End) que demuestra el cumplimiento del objetivo principal.
-* **[Anexo 7] Interacción en Chat (Frontend):** `ticket.png` (La IA confirma la creación del ticket tras detectar el problema).
-* **[Anexo 8] Verificación en Base de Datos (Backend):** `evidencia_ticket.png` (Consulta SQL que demuestra la existencia física del registro).
+
+**[Anexo 7] Interacción en Chat (Frontend):** La IA confirma la creación del ticket tras detectar el problema.  
+![Ticket Chat](evidencias/ticket.png)
+
+**[Anexo 8] Verificación en Base de Datos (Backend):** Consulta SQL que demuestra la existencia física del registro en la tabla `tickets`.  
+![Verificación BD](evidencias/evidencia_ticket.png)
